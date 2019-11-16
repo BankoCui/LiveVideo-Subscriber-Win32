@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="rtmp">
+      <UniqueIdentifier>{d6dfa5d6-e595-4856-a13d-98d26611ebbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="player">
+      <UniqueIdentifier>{2921336c-75af-4e6a-8ca1-b79dd34d6ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{e70ade5c-f979-47ad-9678-c0b78595103c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\VideoPlay.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\VideoPlay.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="librtmp\log.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="librtmp\rtmp.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="librtmp\amf.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoPlayDlg.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoPlay.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AvPlayer.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="AvDecoder.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="H264decoder.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="SubscribeConnection.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="AvPlayerObserver.h">
+      <Filter>player</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VideoPlay.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoPlayDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="librtmp\log.c">
+      <Filter>rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="librtmp\parseurl.c">
+      <Filter>rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="librtmp\rtmp.c">
+      <Filter>rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="librtmp\amf.c">
+      <Filter>rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="AvDecoder.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="AvPlayer.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="H264decoder.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="SubscribeConnection.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VideoPlay.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

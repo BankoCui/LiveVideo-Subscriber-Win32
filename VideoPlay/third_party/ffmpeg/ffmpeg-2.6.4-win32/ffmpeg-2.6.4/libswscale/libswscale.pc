@@ -1,0 +1,14 @@
+prefix=/e/VisualCpp2010Project/Win32ConsoleProject/VideoCodec/VideoCodec/third_party/ffmpeg/ffmpeg-2.6.4-win32/ffmpeg-2.6.4/xiaohang/ffmpeg-2.6.4/
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 3.1.101
+Requires: libavutil >= 54.20.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswscale -lm
+Libs.private: 
+Cflags: -I${includedir}

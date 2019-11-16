@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}/../../../libavcodec
+includedir=${pcfiledir}/../../..
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 56.26.100
+Requires: libavutil >= 54.20.100
+Conflicts:
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lavcodec -lavicap32 -lgdi32 -Le:/VisualCpp2010Project/Win32ConsoleProject/VideoCodec/VideoCodec/third_party/ffmpeg/ffmpeg-2.6.4-win32/ffmpeg-2.6.4/x264/lib -lx264 -lm -lpsapi -ladvapi32 -lshell32
+Cflags: -I${includedir}

@@ -1,0 +1,59 @@
+一、环境
+1.下载mingw 
+http://sourceforge.net/projects/mingw
+
+2.下载MSYS
+http://www.tortall.net/projects/yasm/releases/yasm-1.2.0-win32.exe，改名为yasm.exe
+放入安装目录下：c:/mingw/bin/中
+
+3.安装yasm
+http://www.tortall.net/projects/yasm/releases/yasm-1.2.0-win32.exe，改名为yasm.exe
+放入安装目录下：c:/mingw/bin/中
+
+4.下载安装pkg-config到c:/mingw/bin/目录
+a. 下载http://ftp.acc.umu.se/pub/gnome/binaries/win32/dependencies/pkg-config_0.23-3_win32.zip，
+ 提取压缩包中文件改名为pkg-config.exe
+注意如果该链接失效，可以打开父路径[http://ftp.acc.umu.se/pub/gnome/binaries/win32/dependencies/]查找类似的文件名
+b. 下载http://ftp.acc.umu.se/pub/gnome/binaries/win32/glib/2.18/glib_2.18.4-1_win32.zip，
+ 提取压缩包中文件libglib-2.0-0.dll
+
+5.下载安装sdl,需要1.3或者1.2的版本
+http://www.libsdl.org/tmp/，选择一个您要的版本
+ 我选的是SDL-1.3.0-6208.zip
+ a.解压，可以解压到文件夹C:\MinGW\msys\home\xxx下，xxx是您的windows用户名
+b.打开C:\MinGW\msys\1.0\msys.bat，进入MinGW命令行环境
+cd SDL-1.3.0-6208
+ ./configure –prefix=/c/mingw
+ make
+ make install
+
+6.修改配置文件
+a.修改文本文件C:\MinGW\msys\1.0\msys.bat，在最前面加入1行, 设置vs2008的环境变量:
+call “C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\vcvars32.bat”
+注意：把这里的路径替换为您的vs2008安装路径
+ 加入环境变量：
+
+b.修改配置文件：C:\MinGW\msys\1.0\etc\profile,找到类似的行修改
+ 注意这里设置了第2步安装的git的路径和第3步安装的pkg-config环境变量，路径都必须为linux格式的，并且盘符前要加上反斜杠
+
+7.下载安装sdl,需要1.3或者1.2的版本
+http://www.libsdl.org/tmp/，选择一个您要的版本
+ 我选的是SDL-1.3.0-6208.zip
+ a.解压，可以解压到文件夹C:\MinGW\msys\home\xxx下，xxx是您的windows用户名
+b.打开C:\MinGW\msys\1.0\msys.bat，进入MinGW命令行环境
+cd SDL-1.3.0-6208
+ ./configure –prefix=/c/mingw
+ make
+ make install
+
+8.下载ffmpeg，这里使用的2.1版本
+解压到C:\MinGW\msys\1.0\home\xxx目录下，xxx是你的windows用户名
+
+二、编译
+1. 将脚本 build-ffmepg2.1-win32.sh 拷贝到 ffmpeg目录下，并运行
+2. make
+3. make install
+
+
+
+
